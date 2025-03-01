@@ -6,12 +6,33 @@
       <title>dev Board</title>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,100px) 200px 200px;
+    gap: 20px;
+  }
+
+  
+  
+  .box{
+    background-color: white;
+    border-radius: 10px;
+  }
+  #box-4{
+    
+    grid-row: span 3;
+
+  }
+</style>
 
 </head>
 <body class="bg-teal-50 ">
   <!-- navber design  -->
   
-  <nav class="max-w-7xl mx-auto border-none rounded-md bg-white mt-6 p-4">
+  <nav class="max-w-7xl mx-auto border-none rounded-md bg-white  p-5  ">
        <div class="flex justify-between">     
     <div class="flex gap-3">
         <img class="size-10 " src="assets/logo.png"  alt="loading">
@@ -27,10 +48,38 @@
      
 </nav>
 <!-- header section design  -->
-<header>
-    <div class="container">
-      <div id="box-1">Box - 1</div>
-      <div id="box-2">Box - 2</div>
+<header class="max-w-7xl mx-auto mt-6 ">
+    
+    <div class="container pb-15 ">
+      <!-- box-1  -->
+      <div class="box flex justify-center items-center gap-6" id="box-1">
+        <img class="size-6   " src="assets/checkbox.png" alt="">
+        <p>task assigned <br> <span style="font-weight: bold;">05</span></p>
+      </div>
+      <!-- box-2  -->
+      <div class="box flex justify-center items-center gap-6 bg-gradient-to-r from-blue-500 to-cyan-500 ..." id="box-2">
+        <img class="size-10" src="assets/board.png" alt="">
+        <p class="text-white">Discover something <br>New today!</p>
+      </div>
+      <!-- box-3  -->
+      <div class="box flex justify-center items-center gap-6  " id="box-3">
+        <img class="size-10" src="assets/calender.png" alt="">
+        <p>Wed, <br><span style="font-weight: bold;">Jul 28,2025</span></p>
+      </div>
+      <!-- box-4  -->
+      <div class="box" id="box-4">
+      
+      </div>
+      <!-- box-5  -->
+      <div class="box" id="box-5">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">ShopEase </button>
+        <h3 class="font-weight:bold;">Fix Mobile Button Issue </h3>
+      </div>
+      <div class="box" id="box-6">Box - 6</div>
+      <div class="box" id="box-7">Box - 7</div>
+      <div class="box" id="box-8">Box - 8</div>
+      <div class="box" id="box-9">Box - 9</div>
+      <div class="box" id="box-10">Box - 10</div>
 
     </div>
 
