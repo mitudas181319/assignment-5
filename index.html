@@ -11,7 +11,7 @@
   .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,100px) 200px 200px;
+    grid-template-rows: repeat(1,100px) 250px 250px;
     gap: 20px;
   }
 
@@ -42,6 +42,7 @@
     
     <div class="flex  gap-3">
       <img class="size-6 my-auto" src="assets/checkbox.png" alt="">
+      <h1 class="font-bold mt-2 " id="increaseNum">23</h1>
        <img class="size-8 my-auto" src="assets/theme-btn.png" alt="">
     </div>
   </div>
@@ -54,7 +55,7 @@
       <!-- box-1  -->
       <div class="box flex justify-center items-center gap-6" id="box-1">
         <img class="size-6   " src="assets/checkbox.png" alt="">
-        <p>task assigned <br> <span style="font-weight: bold;">05</span></p>
+        <p>task assigned <br> <span id="decreaseNum" style="font-weight: bold;">06</span></p>
       </div>
       <!-- box-2  -->
       <div class="box flex justify-center items-center gap-6 bg-gradient-to-r from-blue-500 to-cyan-500 ..." id="box-2">
@@ -68,24 +69,136 @@
       </div>
       <!-- box-4  -->
       <div class="box" id="box-4">
+        <div class="flex justify-center m-4 gap-3">
+          <img src="assets/activity.png" alt="">
+          <p>Activity Log</p>
+        </div>
+        <button class="p-2  bg-sky-600 rounded-md text-white ml-25" id="clear-btn">Clear History</button>
+        <div id="history">
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="text" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+      </p>
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="texted" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+        </p>
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="p3" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+        </p>
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="p4" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+        </p>
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="p5" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+        </p>
+        <p class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400" id="p6" style="display: none;">You have Complete The Task Add Dark Mode at 12:48:15 PM
+        </p>
+      </div>
+
       
       </div>
       <!-- box-5  -->
-      <div class="box" id="box-5">
+      <div class="box" id="box-5 ">
         <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">ShopEase </button>
-        <h3 class="font-weight:bold;">Fix Mobile Button Issue </h3>
+         <p class="text-2xl font-medium pl-3 ">Fix Mobile Button Issue</p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Debug using Chrome DevTools, check for overlapping elements, ...
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
       </div>
-      <div class="box" id="box-6">Box - 6</div>
-      <div class="box" id="box-7">Box - 7</div>
-      <div class="box" id="box-8">Box - 8</div>
-      <div class="box" id="box-9">Box - 9</div>
-      <div class="box" id="box-10">Box - 10</div>
+      <div>
+        <button class="  p-2 mt-2 bg-sky-600 rounded-md text-white" id="btn-box5">Completed</button>
+      </div>
+    </div>
+      </div>
+      <!-- box-6  -->
+      <div class="box" id="box-6 ">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">CloudSync </button>
+         <p class="text-2xl font-medium pl-3 ">Add Dark Mode</p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Store the user's preference in localStorage, update CSS vari..
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
+      </div>
+      <div>
+        <button class="  p-2 mt-2 bg-sky-600 rounded-md text-white" id="btn-box6">Completed</button>
+      </div>
+    </div>
+      </div>
+      <!-- box-7  -->
+      <div class="box" id="box-7 ">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">SwiftPay </button>
+         <p class="text-2xl font-medium pl-3 ">Optimize  Home page </p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Debug using Chrome DevTools, check for overlapping elements...
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
+      </div>
+      <div>
+        <button class=" p-2  mt-2 bg-sky-600 rounded-md text-white" id="btn-box7">Completed</button>
+      </div>
+    </div>
+      </div>
+      <!-- box-8  -->
+      <div class="box" id="box-8 ">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">Meta </button>
+         <p class="text-2xl font-medium pl-3 ">Add new emoji 🤲</p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Debug using Chrome DevTools,check for overlapping...
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
+      </div>
+      <div>
+        <button class="  p-2 mt-2 bg-sky-600 rounded-md text-white" id="btn-box8">Completed</button>
+      </div>
+    </div>
+      </div>
+      <!-- b0x-9  -->
+      <div class="box" id="box-9 ">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">Google LLC </button>
+         <p class="text-2xl font-medium pl-3 ">Integrate OpenAI API </p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Debug using Chrome DevTools,check for overlapping...
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
+      </div>
+      <div>
+        <button class=" p-2 mt-2 bg-sky-600 rounded-md text-white" id="btn-box9">Completed</button>
+      </div>
+    </div>
+      </div>
+      <!-- box-10  -->
+      <div class="box" id="box-10 ">
+        <button class=" p-2 m-3  border-none rounded-md bg-teal-50 ">Glassdoar</button>
+         <p class="text-2xl font-medium pl-3 ">Improve Job searching </p>
+        <button class=" p-2 mx-3 mt-3  rounded-md bg-teal-50 text-gray-400  ">Debug using Chrome DevTools,check for overlapping...
+       </button>
+       <p class="text-gray-200 mx-3 ">-------------------------------------------</p>
+       <div class="flex gap-15">
+       <div>
+       <p class="text-gray-400 mx-3">deadline</p>
+       <p class="mx-3">21 march 2025</p>
+      </div>
+      <div>
+        <button class=" p-2 mt-2 bg-sky-600 rounded-md text-white" id="btn-box10">Completed</button>
+      </div>
+    </div>
+      </div>
 
     </div>
 
 </header>
 
 
-
+<script src="./button.js"></script>
 </body>
 </html>
