@@ -194,4 +194,9 @@ const decreessElement = document.getElementById("decreaseNum");
                   history.style.display = "none";
            
       })
+
+
+      // box 2 design 
+
+    
       
